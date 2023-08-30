@@ -15,7 +15,7 @@ export default new Vuex.Store({
   },
   plugins: [
     createPersistedState({
-      storage: window.sessionStorage,
+      storage: window.sessionStorage, // 可选sessionStorage localStorage
       reducer(val) {
         return {
           User: val.User,

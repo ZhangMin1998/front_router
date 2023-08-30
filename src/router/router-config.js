@@ -29,7 +29,7 @@ router.beforeEach((to, from, next) => {
         const accessRoutes = await store.dispatch("permission/generateRoutes", roles)
         // dynamically add accessible routes
         router.addRoutes(accessRoutes)
-        // hack方法
+        // hack方法 router.addRoutes之后的next()可能会失效，因为可能next()的时候路由并没有完全add完成 next(to)解决
         next({ ...to, replace: true })
       }, 500)
     } else {

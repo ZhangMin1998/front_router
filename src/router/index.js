@@ -135,7 +135,7 @@ export const asyncRoutes = [
     path: "/404",
     component: () => import("@/views/404"),
   },
-  // 404 page must be placed at the end !!!
+  // 注意404页面要放到最后
   { path: "*", redirect: "/404", hidden: true },
 ]
 

@@ -2,7 +2,7 @@
   <div class="login-wrapper">
     <div class="modal">
       <el-form :model="user" status-icon :rules="rules" ref="userForm">
-        <div class="title">动态路由</div>
+        <div class="title">前端动态路由</div>
         <el-form-item prop="username">
           <el-input type="text" prefix-icon="el-icon-user" placeholder="请输入用户名" v-model="user.username" />
         </el-form-item>
@@ -89,7 +89,7 @@ export default {
   width: 100%;
   text-align: center;
   line-height: 1.5;
-  font-size: 50px;
+  font-size: 36px;
   margin-bottom: 30px;
 }
 
